@@ -1,0 +1,12 @@
+import {MessageCircle} from 'lucide-react'
+import {WhatsAppLink} from './components/WhatsAppLink'
+import {Header} from './sections/Header'
+import {Hero} from './sections/Hero'
+import {Services} from './sections/Services'
+import {About} from './sections/About'
+import {Results} from './sections/Results'
+import {Differentials} from './sections/Differentials'
+import {CTA} from './sections/CTA'
+import {Contact} from './sections/Contact'
+import {Footer} from './sections/Footer'
+export default function App(){return <><Header/><main><Hero/><Services/><About/><Results/><Differentials/><CTA/><Contact/></main><Footer/><WhatsAppLink className="whatsapp-float" ariaLabel="Solicitar orçamento"><MessageCircle/></WhatsAppLink></>}

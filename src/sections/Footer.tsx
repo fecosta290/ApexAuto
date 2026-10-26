@@ -1,0 +1,4 @@
+import {ArrowUp} from 'lucide-react'
+import {Brand} from '../components/Brand'
+import {siteConfig} from '../config/site'
+export function Footer(){const devLink=siteConfig.developer.url;return <footer className="footer"><div className="container footer-main"><div><Brand/><p>{siteConfig.brand.slogan}</p></div><nav aria-label="Navegação do rodapé"><a href="#servicos">Serviços</a><a href="#sobre">Sobre</a><a href="#resultados">Resultados</a><a href="#contato">Contato</a></nav><div className="footer-contact"><span>{siteConfig.contact.phone}</span><span>{siteConfig.contact.email}</span></div><a className="back-top" href="#inicio" aria-label="Voltar ao início"><ArrowUp/></a></div><div className="container footer-bottom"><span>© {new Date().getFullYear()} APEX Auto Detailing. Projeto demonstrativo.</span><span>Desenvolvido por {devLink?<a href={devLink} target="_blank" rel="noreferrer">{siteConfig.developer.name}</a>:siteConfig.developer.name}</span></div></footer>}

@@ -1,0 +1,5 @@
+import {Focus,HandHeart,Layers3,ScanSearch} from 'lucide-react'
+import {Reveal} from '../components/Reveal'
+import {SectionHeading} from '../components/SectionHeading'
+const items=[{icon:HandHeart,title:'Atendimento personalizado',text:'Escuta atenta para indicar o cuidado que faz sentido para o seu veículo.'},{icon:Focus,title:'Atenção aos acabamentos',text:'Olhar preciso para emendas, cantos, frisos e superfícies delicadas.'},{icon:Layers3,title:'Cuidado com os materiais',text:'Processos escolhidos conforme cada revestimento, textura e condição.'},{icon:ScanSearch,title:'Tratamento sob medida',text:'Uma abordagem específica para a necessidade, sem soluções genéricas.'}]
+export function Differentials(){return <section className="section differentials"><div className="container"><SectionHeading index="05" eyebrow="NOSSO JEITO" title="CADA DETALHE IMPORTA."/><div className="diff-grid">{items.map(({icon:Icon,title,text},i)=><Reveal className="diff-card" key={title}><span>0{i+1}</span><Icon size={28} strokeWidth={1.3}/><h3>{title}</h3><p>{text}</p></Reveal>)}</div></div></section>}
